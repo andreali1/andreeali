@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int a,b,c;
+        int a,b,c,d;
         Scanner teclado = new Scanner(System.in);
         System.out.println("hola mundo ");
         System.out.println("ingrese el primer numeor a operar ");
@@ -17,7 +17,7 @@ public class Main {
         System.out.println("opc 1 --> sumar numeros ");
         System.out.println("opc 2 --> restar los numeros ");
         System.out.println("opc 3 --> multiplicar numeros ");
-
+        System.out.println("opc 4 --> division de numeros ");
 
         System.out.println("ingrese el numero de la operacion a realizar ");
         c = teclado.nextInt();
@@ -35,6 +35,11 @@ public class Main {
             case 3:
                 int mult= a*b;
                 System.out.println("la multiplicacion de los numeros es igual a --> "+mult);
+            case 4:
+                float e =  a/b ;
+                System.out.println("la division de los numeros es --> "+e);
+                break;
+
                 default:
                     System.out.println("la opcion ingresada no es correcta ");
         }
